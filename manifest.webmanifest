@@ -1,0 +1,18 @@
+{
+  "name": "Health Log",
+  "short_name": "Health Log",
+  "description": "食事・体組成・活動記録",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f9f8",
+  "theme_color": "#17695e",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
