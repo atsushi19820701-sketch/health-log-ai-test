@@ -35,7 +35,7 @@ if(firebaseConfig.apiKey.startsWith('REPLACE_')||firebaseConfig.appId.startsWith
  }catch(e){say('Firebase初期化エラー: '+e.message)}
 }
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
-async function sync(){
+async function sync(){say('テスト版：クラウド同期を停止しています');return;  
  if(!currentUser||!db)return;if(!navigator.onLine){displayOffline();return}if(busy){queued=true;return}busy=true;
  try{
  say('同期中… / 記録を保護しています');
